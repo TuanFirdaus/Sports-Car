@@ -92,7 +92,7 @@ header {
   margin: 0px;
 }
 
-
+ 
 .Title h2 {
   width: 700px;
   color: rgba(0, 0, 0, 1);
@@ -161,8 +161,6 @@ nav a:hover {
 }
 
 main {
-  /* width: 100%; */
-  /* padding-top: 62px; */
   flex: wrap;
   /* display: grid; */
 }
@@ -303,10 +301,9 @@ main {
 }
 
 
-
 /* Latest section styles */
 .LatestSection {
-  width: 529px;
+  width: 100%;
   height: 479px;
   position: absolute;
   top: 436px;
@@ -395,21 +392,8 @@ img{
   .text{font-size: 11px;}
 }
 
-/* .ImageTitle {
-  width: 65px;
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 194px;
-  left: 230px;
-  font-family: 'Droid Sans';
-  font-weight: Regular;
-  font-size: 10px;
-  text-align: center;
-  flex: wrap;
-} */
+/* Brand section styles */
 
-/* Brand section styles */
-/* Brand section styles */
 .Brand {
   width: 535px;
   height: 100px;
