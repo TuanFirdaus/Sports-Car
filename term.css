@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background-image: url(T1.jpg);
+  background-size: cover;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--primary-text-clr);
+  /* padding: 0 20px; */
+}
+
+/* Header styles */
+header {
+  width: 100%;
+  position: relative;
+  /* top: 0px; */
+  background-size: cover;
+
+
+}
+
+/* Add the following styles for the HeaderImage */
+.HeaderImage {
+  width: 100%;
+  height: 150%;
+  /* Set the height to 100% to cover the entire HeadBanner */
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+  /* This will make sure the image covers the entire space */
+  box-shadow: 5px solid black;
+}
+
+/* Adjust the styles for the HeadBanner to accommodate the image */
+.HeadBanner {
+  width: 100%;
+  /* Set the width to 100% to make it responsive */
+  height: 258px;
+  /* Set the desired height */
+  position: relative;
+  overflow: hidden;
+  flex: wrap;
+}
+
+/* CompanyNameAndLogo styles */
+.CompanyNameAndLogo {
+  display: flex;
+  align-items: center;
+  translate: 30%;
+  flex: wrap;
+  flex-direction: column;
+  /* Stack logo and company name on small screens */
+
+}
+
+.CompanyName {
+  width: 229px;
+  color: rgb(255, 255, 255);
+  font-weight: Regular;
+  font-size: 60px;
+  text-align: center;
+  margin-left: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100px;
+  flex: wrap;
+}
+
+/* Logo styles */
+.Logo {
+  width: 300px;
+  /* margin-right: 5px; */
+  flex: wrap;
+}
+
+.Logo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  flex: wrap;
+}
+
+/* Style for the navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px;
+  width: 100%;
+  height: 62px;
+  background: #323232;
+  box-shadow: 0 0 10px rgb(0 0 0/10%);
+  z-index: 1000;
+  flex: wrap;
+  opacity: .6;
+}
+
+/* Style for the navigation links */
+nav a {
+  text-decoration: none;
+  color: #f9f0f0;
+  font-weight: bold;
+  margin: 0 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Change link color on hover */
+nav a:hover {
+  color: #007BFF;
+}
+
+/* Footer specific styles */
+.footer {
+  width: 100%;
+  height: 130px;
+  position: relative;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #323232;
+  flex: wrap;
+  left: 0px;
+}
+
+.footer.card {
+    font-size: 19px;
+    /* letter-spacing: 50px; */
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all 0.5s;
+    opacity: 0.6;
+    position: absolute;
+}
+
+.footerBottom {
+    position: absolute;
+    top: 75px;
+    bottom: 0;
+    left: 20px;
+    width: 100%;
+    background-color: #323232;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+    margin: 0;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+.card {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px 5px 5px;
+    gap: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    position: absolute;
+    bottom: 50px;
+    /* Adjust this value to move the card up or down */
+    right: 650px;
+    /* z-index: 700; */
+    flex: wrap;
+}
+
+
+/* for all social containers*/
+.socialContainer {
+    width: 42px;
+    height: 42px;
+    /* background-color: rgb(44, 44, 44); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+    border-radius: 50%;
+    background-color: rgb(24, 21, 21);
+}
+
+
+
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0833ab;
+    transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+:root {
+  --bg-clr: #394168;
+  --white: #fff;
+  --title-clr: #394168;
+  --pry-text-clr: #b3b3b3;
+  --scn-text-clr: #838384;
+  --btn-hvr-clr: #5363b0;
+}
+
+.flex_center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tc_main{
+  margin: 20px 0;
+  width: 500px;
+  max-width: 100%;
+  height: 550px;
+  background: var(--white);
+  text-align: center;
+  border-radius: 3px;
+}
+
+.tc_main .title{
+  color: var(--title-clr);
+  margin-bottom: 5px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tc_main .tc_content .tc_bottom .title{
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.tc_main .tc_content{
+  width: 100%;
+  margin: 35px 0;
+  height: calc(550px - 150px);
+}
+
+.tc_main .tc_btns{
+  width: 100%;
+  height: 80px;
+  padding: 21px 0;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+}
+
+.tc_main .tc_content .tc_top{
+  margin: 0 35px 35px;
+}
+
+.tc_main .tc_content .tc_bottom{
+  padding: 0 35px;
+  overflow: auto;
+  height: calc(100% - 210px);
+}
+
+.tc_main .tc_content .tc_top .icon{
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--title-clr);
+}
+
+.tc_main .tc_content .tc_top .info{
+  color: var(--scn-text-clr);
+}
+
+.tc_main .tc_content .tc_bottom .info p{
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.tc_main .tc_btns button{
+  width: 125px;
+  padding: 10px;
+  margin: 0 10px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+}
+
+.tc_main .tc_btns button.accept{
+  background: var(--title-clr);
+  color: var(--white);
+}
+
+.tc_main .tc_btns button.decline{
+  border: 1px solid var(--title-clr);
+  background: transparent;
+  color: var(--title-clr);
+}
+
+.tc_main .tc_btns button.decline:hover{
+  background: var(--title-clr);
+  color: var(--white);
+}
+
+.tc_main .tc_btns button.accept:hover{
+  background: var(--btn-hvr-clr);
+}

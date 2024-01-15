@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-size: 14px;
+    flex: wrap;
+    width: 100%;
+    background-color: #000000;
+    color: #fcf9f9;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    position: relative;
+    /* top: 0px; */
+    background-size: cover;
+
+
+}
+
+/* Add the following styles for the HeaderImage */
+.HeaderImage {
+    width: 100%;
+    height: 150%;
+    /* Set the height to 100% to cover the entire HeadBanner */
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+    /* This will make sure the image covers the entire space */
+    box-shadow: 5px solid black;
+}
+
+/* Adjust the styles for the HeadBanner to accommodate the image */
+.HeadBanner {
+    width: 100%;
+    /* Set the width to 100% to make it responsive */
+    height: 258px;
+    /* Set the desired height */
+    position: relative;
+    overflow: hidden;
+    flex: wrap;
+}
+
+/* CompanyNameAndLogo styles */
+.CompanyNameAndLogo {
+    display: flex;
+    align-items: center;
+    translate: 30%;
+    flex: wrap;
+    flex-direction: column;
+    /* Stack logo and company name on small screens */
+
+}
+
+.CompanyName {
+    width: 229px;
+    color: rgb(255, 255, 255);
+    font-weight: Regular;
+    font-size: 60px;
+    text-align: center;
+    margin-left: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100px;
+    flex: wrap;
+}
+
+/* Logo styles */
+.Logo {
+    width: 300px;
+    /* margin-right: 5px; */
+    flex: wrap;
+}
+
+.Logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    flex: wrap;
+}
+
+/* Style for the navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 20px;
+    width: 100%;
+    height: 62px;
+    background: #323232;
+    box-shadow: 0 0 10px rgb(0 0 0/10%);
+    z-index: 1000;
+    flex: wrap;
+    opacity: .6;
+}
+
+/* Style for the navigation links */
+nav a {
+    text-decoration: none;
+    color: #f9f0f0;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Change link color on hover */
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Footer specific styles */
+.footer {
+    width: 100%;
+    height: 130px;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #323232;
+    flex: wrap;
+    left: 0px;
+}
+
+.footer.card {
+    font-size: 19px;
+    /* letter-spacing: 50px; */
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all 0.5s;
+    opacity: 0.6;
+    position: absolute;
+}
+
+.footerBottom {
+    position: absolute;
+    top: 75px;
+    bottom: 0;
+    left: 20px;
+    width: 100%;
+    background-color: #323232;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+    margin: 0;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+.card {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px 5px 5px;
+    gap: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    position: absolute;
+    bottom: 50px;
+    /* Adjust this value to move the card up or down */
+    right: 650px;
+    /* z-index: 700; */
+    flex: wrap;
+}
+
+
+/* for all social containers*/
+.socialContainer {
+    width: 42px;
+    height: 42px;
+    /* background-color: rgb(44, 44, 44); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+    border-radius: 50%;
+    background-color: rgb(24, 21, 21);
+}
+
+
+
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0833ab;
+    transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(sup2.jpg);
+    background-size: cover;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+}
+
+.contact .content h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 0 30px 0;
+    font-family: 'Instrument Serif', serif;
+
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: #fff;
+    margin-top: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.container .contactInfo {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    margin-left: 400px;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* .container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    opacity: 0.8;
+} */
+
+.text {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.text a {
+    color: white;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+    font-weight: 600;
+    color: #096ee9;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px) {
+    .contact {
+        padding: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .contactInfo {
+        margin-bottom: 40px;
+    }
+
+    .container .contactInfo,
+    .contactForm {
+        width: 100%;
+    }
+}
+
+
+
+/* .active,
+.collapsible:hover {
+    background-color: #aca8a8;
+} */
+
+.content1 {
+    padding-bottom: 10px;
+    display: none;
+    overflow: hidden;
+    /* background-color: #f1f1f1; */
+    width: 100%;
+}
+
+
+.text .content p {
+    color: #c1bebe;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.faQ {
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 2rem 0rem;
+    margin-left: 18rem;
+    margin-top: 10rem;
+}
+
+.faq {
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    margin-left: 18rem;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    font-size: 1.2rem;
+    padding-right: 10px;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.answer p {
+    padding-top: 1rem;
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+}
+
+.faq.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active svg {
+    transform: rotate(180deg);
+}
+
+svg {
+    transition: transform .5s ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.termN {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.termN a:hover {
+    background-color: yellow;
+  }
