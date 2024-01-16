@@ -128,7 +128,7 @@ let listProducts = [
         name: 'Aston Martin DB12',
         price: 1152607.00,
         quantiy: 11,
-        image: 'AstonMartin1.jpg',
+        image: 'astonmartin1.jpg',
         nature: {
             color: ['red'],
             year: ['2024'],
@@ -152,7 +152,7 @@ let listProducts = [
         name: 'Aston Martin DB9 GT',
         price: 550000.00,
         quantiy: 11,
-        image: 'AstonMartin3.jpg',
+        image: 'astonmartin3.jpg',
         nature: {
             color: ['red'],
             year: ['2016'],
