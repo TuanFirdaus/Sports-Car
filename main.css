@@ -119,15 +119,15 @@ header {
 }
 
 .Overview {
-  width: 550px;
+  width: 50rem;
   color: rgba(0, 0, 0, 1);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 450; /* Add your desired font weight value */
   font-size: 15px;
   text-align: center;
   margin-top: 60px; /* Add some margin for separation */
-  margin-left: 90px;
-  flex: wrap;
+  margin-left: 90px; 
+  flex-wrap: wrap;
   line-height: 2;
 }
 
