@@ -55,7 +55,7 @@ header {
 
 }
 
-.CompanyName {
+/* .CompanyName {
   width: 229px;
   color: rgb(255, 255, 255);
   font-weight: Regular;
@@ -65,7 +65,7 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100px;
   flex: wrap;
-}
+} */
 
 /* Logo styles */
 .Logo {
@@ -81,10 +81,14 @@ header {
   flex: wrap;
 }
 
+.Content {
+ display: flex;
+ flex-direction: column;
+}
 
 .Title {
   text-align: center;
-  width: 500px;
+  width: 50%;
   left: 1%;
   position: absolute;
   font-size: 20px;
@@ -163,7 +167,6 @@ nav a:hover {
 main {
   display: flex;
   flex: wrap;
-  background-color: #007BFF;
   /* display: grid; */
 }
 
@@ -302,6 +305,10 @@ main {
   }
 }
 
+.separate {
+  width: 100%;
+  display: flex;
+}
 
 /* Latest section styles */
 .LatestSection {
@@ -309,11 +316,11 @@ main {
   height: 479px;
   position: absolute;
   top: 436px;
-  left: 839px;
+  right: 0;
   overflow: hidden;
   flex: wrap;
-  display: grid;
-  flex: wrap;
+  align-items: center;
+  border: none;
 }
 
 .LatestBox {
@@ -322,9 +329,14 @@ main {
   background: rgba(217, 217, 217, 1);
   position: absolute;
   top: 48px;
-  /* left: 0; */
+  right: 0;
   flex: wrap;
   overflow: hidden;
+}
+
+.LatestText {
+  position: absolute;
+  right: 25rem;
 }
 
 .mySlides fade{
@@ -401,13 +413,12 @@ img{
   height: 100px;
   position: absolute;
   top: 340px;
-  left: 835px;
+  right: 0;
   overflow: hidden;
   flex: wrap;
   align-items: center;
   border: none;
   border-radius: 5px;
-  
 }
 
 .Brand img {
