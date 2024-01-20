@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+meta {
+  name: viewport;
+  content: width=device-width, initial-scale=1.0;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -7,7 +13,7 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 0.8em;
   flex: wrap;
   width: 100%;
   margin: 0;
@@ -27,7 +33,7 @@ header {
 /* Add the following styles for the HeaderImage */
 .HeaderImage {
   width: 100%;
-  height: 150%; /* Set the height to 100% to cover the entire HeadBanner */
+  height: 100%; /* Set the height to 100% to cover the entire HeadBanner */
   position: absolute;
   top: 0;
   z-index: -1;
@@ -55,18 +61,6 @@ header {
 
 }
 
-/* .CompanyName {
-  width: 229px;
-  color: rgb(255, 255, 255);
-  font-weight: Regular;
-  font-size: 60px;
-  text-align: center;
-  margin-left: 5px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 100px;
-  flex: wrap;
-} */
-
 /* Logo styles */
 .Logo {
   width: 300px;
@@ -81,36 +75,32 @@ header {
   flex: wrap;
 }
 
-.Content {
- display: flex;
- flex-direction: column;
-}
+
 
 .Title {
   text-align: center;
   width: 50%;
   left: 1%;
   position: absolute;
-  font-size: 20px;
   top: 50%; /* Adjust this value to move the entire Title container up or down */
   margin: 0px;
+  flex-wrap: wrap;
 }
 
  
 .Title h2 {
-  width: 700px;
+  width: 100%;
   color: rgba(0, 0, 0, 1);
   /* position: relative; */
   left: 100px;
   font-weight: bolder;
-  font-size: 86px;
+  font-size: 7em;
   text-align: center;
   margin: 0;
   /* padding: 0; */
   font-family: 'Montserrat', sans-serif;
-  flex: wrap;
+  /* flex: wrap; */
   text-shadow: 4px 4px 4px #000000;
-  
 }
 
 .Title h3 {
@@ -119,15 +109,15 @@ header {
 }
 
 .Overview {
-  width: 50rem;
+  width: 100%;
   color: rgba(0, 0, 0, 1);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 450; /* Add your desired font weight value */
-  font-size: 15px;
+  font-size: 1.2em;
   text-align: center;
-  margin-top: 60px; /* Add some margin for separation */
-  margin-left: 90px; 
-  flex-wrap: wrap;
+  margin-top: 20px; /* Add some margin for separation */
+  /* margin-left: 90px;  */
+  /* flex: wrap; */
   line-height: 2;
 }
 
@@ -166,149 +156,18 @@ nav a:hover {
 
 main {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   /* display: grid; */
 }
 
 
 
-/* Footer specific styles */
-.footer {
-  width: 100%;
-  height: 130px;
-  position: relative;
-  top: 1402px;
-  overflow: hidden;
-  background-color: #323232;
-  flex: wrap;
-  left: 0px;
-}
 
-.footer.card {
-  font-size: 19px;
-  /* letter-spacing: 50px; */
-  padding: 10px;
-  border-radius: 5px;
-  text-transform: capitalize;
-  transition: all 0.5s;
-  opacity: 0.6;
-  position: absolute;
-}
-
-.footerBottom {
-  position: absolute;
-  top: 75px;
-  bottom: 0;
-  left: 20px;
-  width: 100%;
-  background-color: #323232;
-  padding: 20px;
-  text-align: center;
-}
-
-.footerBottom p {
-  color: white;
-  margin: 0;
-}
-
-.designer{
-  opacity: 0.7;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  margin: 0px 5px;
-}
-
-.card {
-  width: fit-content;
-  height: fit-content;
+.Content {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 5px 5px 5px;
-  gap: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-  position: absolute;
-  bottom: 50px; /* Adjust this value to move the card up or down */
-  right: 650px;
-  /* z-index: 700; */
-  flex: wrap;
-}
-
-
-/* for all social containers*/
-.socialContainer {
-  width: 42px;
-  height: 42px;
-  /* background-color: rgb(44, 44, 44); */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition-duration: .3s;
-  border-radius: 50%;
-  background-color: rgb(24, 21, 21);
-}
-
-
-
-/* instagram*/
-.containerOne:hover {
-  background-color: #d62976;
-  transition-duration: .3s;
-}
-
-/* twitter*/
-.containerTwo:hover {
-  background-color: #00acee;
-  transition-duration: .3s;
-}
-
-/* linkdin*/
-.containerThree:hover {
-  background-color: #0833ab;
-  transition-duration: .3s;
-}
-
-/* Whatsapp*/
-.containerFour:hover {
-  background-color: #128C7E;
-  transition-duration: .3s;
-}
-
-.socialContainer:active {
-  transform: scale(0.9);
-  transition-duration: .3s;
-}
-
-.socialSvg {
-  width: 17px;
-}
-
-.socialSvg path {
-  fill: rgb(255, 255, 255);
-}
-
-.socialContainer:hover .socialSvg {
-  animation: slide-in-top 0.3s both;
-}
-
-@keyframes slide-in-top {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.separate {
-  width: 100%;
-  display: flex;
-}
+  flex-direction: column;
+  flex-wrap: wrap;
+ }
 
 /* Latest section styles */
 .LatestSection {
@@ -316,9 +175,9 @@ main {
   height: 479px;
   position: absolute;
   top: 436px;
-  right: 0;
+  right: 1.5em;
   overflow: hidden;
-  flex: wrap;
+  flex-wrap: wrap;
   align-items: center;
   border: none;
 }
@@ -330,7 +189,7 @@ main {
   position: absolute;
   top: 48px;
   right: 0;
-  flex: wrap;
+  flex-wrap: wrap;
   overflow: hidden;
 }
 
@@ -402,23 +261,69 @@ img{
   from{opacity: 4;}
   to{opacity: 1;}
 }
-@media only screen and (max-width: 300px){
+/* @media only screen and (max-width: 300px){
   .text{font-size: 11px;}
-}
+} */
+@media only screen and (max-width: 768px) {
+  .Title {
+    width: 90%;
+    left: 5%;
+    font-size: 1.4em;
+    top: 30%;
+  }
 
+  .Title h2 {
+    font-size: 2em; /* Adjust font size */
+    margin-top: 1.6em;
+    margin-bottom: 0;
+  }
+
+  .Overview {
+    font-size: 0.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .LatestBox {
+    width: 100%; /* Full width for responsiveness */
+    height: auto; /* Use 'auto' for responsive height */
+    margin-bottom: 15px; /* Adjust margin for separation */
+  }
+
+  .Brand {
+    width: 10px; 
+    max-height: auto; 
+    margin-top: 15px; 
+  }
+
+  .Brand a {
+    width:100px;
+    height:70px;
+  }
+  .Brand img {
+    width: 100%; /* Full width for responsiveness */
+    height: auto; /* Use 'auto' for responsive height */
+  }
+
+  .features p {
+    font-size: 0.5em;
+  }
+
+}
 /* Brand section styles */
 
 .Brand {
-  width: 535px;
-  height: 100px;
+  width: 45em;
+  height: auto;
   position: absolute;
   top: 340px;
   right: 0;
-  overflow: hidden;
-  flex: wrap;
+  /* overflow: hidden; */
+  flex-wrap: wrap;
   align-items: center;
   border: none;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .Brand img {
